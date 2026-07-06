@@ -7,9 +7,13 @@ export default function HeroSection({ hero }: { hero: Article | null }) {
     <section className="max-w-7xl mx-auto px-4 py-6">
       <a
         href="#"
-        className="group block relative overflow-hidden rounded-xl bg-gray-100"
+        className="group block relative overflow-hidden rounded-xl bg-gradient-to-br from-brand-blue to-brand-green"
       >
-        <div className="aspect-[16/9] sm:aspect-[21/9] bg-gradient-to-br from-brand-blue to-brand-green" />
+        <img
+          src={hero.imageUrl}
+          alt={hero.title}
+          className="w-full aspect-[16/9] sm:aspect-[21/9] object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8">
           <span className="inline-block bg-brand-orange text-white text-xs font-bold uppercase px-3 py-1 rounded mb-3">

@@ -14,7 +14,13 @@ export default function ArticleGrid({ articles }: { articles: Article[] }) {
             href="#"
             className="group bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow"
           >
-            <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300" />
+            <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
+              <img
+                src={article.imageUrl}
+                alt={article.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-4">
               <span
                 className={`text-xs font-bold uppercase tracking-wider ${
