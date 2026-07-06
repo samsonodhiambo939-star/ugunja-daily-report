@@ -4,3 +4,5 @@ out/
 .wrangler/
 .env
 .env.local
+dist/
+.sanity/
