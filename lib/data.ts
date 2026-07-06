@@ -1,5 +1,6 @@
 export interface Article {
   id: string;
+  slug: string;
   title: string;
   excerpt: string;
   category: string;
@@ -12,6 +13,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: "1",
+    slug: "ugunja-mp-healthcare-initiative",
     title: "Ugunja MP Launches New Healthcare Initiative for Rural Communities",
     excerpt: "The initiative aims to bring affordable medical services to over 50,000 residents across Ugunja constituency, with mobile clinics and community health workers.",
     category: "Politics",
@@ -22,6 +24,7 @@ export const articles: Article[] = [
   },
   {
     id: "2",
+    slug: "ugenza-youth-football-tournament",
     title: "Ugenya Youth Win Regional Football Tournament",
     excerpt: "The Ugenya United junior team clinched the Nyanza Regional Cup after a thrilling penalty shootout at the Kisumu Stadium.",
     category: "Sports",
@@ -31,6 +34,7 @@ export const articles: Article[] = [
   },
   {
     id: "3",
+    slug: "ugunja-cultural-festival",
     title: "Local Artisans Showcase Talent at Ugunja Cultural Festival",
     excerpt: "The annual festival attracted hundreds of visitors, featuring traditional music, dance, and handcrafted goods from local artisans.",
     category: "Entertainment",
@@ -40,6 +44,7 @@ export const articles: Article[] = [
   },
   {
     id: "4",
+    slug: "siaya-clean-up-drive",
     title: "Community Clean-Up Drive Mobilizes Hundreds in Siaya",
     excerpt: "Residents came together for a massive clean-up exercise, collecting over 2 tons of waste and planting trees along the main roads.",
     category: "Community",
@@ -49,6 +54,7 @@ export const articles: Article[] = [
   },
   {
     id: "5",
+    slug: "county-road-repairs",
     title: "Breaking: County Allocates KSh 200M for Road Repairs",
     excerpt: "Siaya County government has approved emergency funds for road repairs following the recent heavy rains that damaged key transport routes.",
     category: "Breaking",
@@ -58,6 +64,7 @@ export const articles: Article[] = [
   },
   {
     id: "6",
+    slug: "sidindi-school",
     title: "New School Built in Sidindi to Boost Education Access",
     excerpt: "The newly constructed Sidindi Primary School will accommodate over 800 students, reducing the distance children travel to school.",
     category: "Community",
@@ -67,6 +74,7 @@ export const articles: Article[] = [
   },
   {
     id: "7",
+    slug: "climate-smart-agriculture",
     title: "Ugunja Farmers Adopt Climate-Smart Agriculture Techniques",
     excerpt: "Local farmers are embracing drought-resistant crops and improved irrigation methods to combat the effects of climate change.",
     category: "Community",
@@ -76,6 +84,7 @@ export const articles: Article[] = [
   },
   {
     id: "8",
+    slug: "otinde-amollo-hit-single",
     title: "Entertainment: Upcoming Artist from Ugenya Drops Hit Single",
     excerpt: "Emerging musician Otiende Amollo releases 'Dala Yawe', a song celebrating Luo heritage that is quickly climbing local charts.",
     category: "Entertainment",
@@ -85,6 +94,7 @@ export const articles: Article[] = [
   },
   {
     id: "9",
+    slug: "ugunja-peace-marathon",
     title: "Sports: Ugunja Marathon Attracts Runners from Across Kenya",
     excerpt: "Over 1,500 runners participated in the 5th annual Ugunja Peace Marathon, promoting unity and healthy living in the region.",
     category: "Sports",
@@ -94,6 +104,7 @@ export const articles: Article[] = [
   },
   {
     id: "10",
+    slug: "digital-literacy-program",
     title: "County Government Launches Digital Literacy Program",
     excerpt: "The program will equip 10,000 residents with basic digital skills, targeting youth and small business owners in rural areas.",
     category: "Politics",
@@ -103,6 +114,7 @@ export const articles: Article[] = [
   },
   {
     id: "11",
+    slug: "traditional-luo-wedding",
     title: "Traditional Luo Wedding Ceremony Draws Large Crowd in Ugunja",
     excerpt: "The colorful ceremony featuring traditional attire, music, and dowry negotiations showcased the rich cultural heritage of the Luo community.",
     category: "Entertainment",
@@ -112,6 +124,7 @@ export const articles: Article[] = [
   },
   {
     id: "12",
+    slug: "ugenza-health-centers",
     title: "Ugenya MP Pledges to Upgrade Rural Health Centers",
     excerpt: "The Member of Parliament has promised to equip all health centers in Ugenya with essential medical supplies and qualified staff.",
     category: "Politics",

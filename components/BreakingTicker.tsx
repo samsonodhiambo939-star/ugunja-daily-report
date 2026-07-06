@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Article } from "@/lib/data";
 
 export default function BreakingTicker({ articles }: { articles: Article[] }) {
@@ -14,9 +15,9 @@ export default function BreakingTicker({ articles }: { articles: Article[] }) {
         <div className="overflow-hidden relative h-10 flex-1">
           <div className="animate-marquee whitespace-nowrap absolute leading-10 px-4">
             {breaking.map((item) => (
-              <span key={item.id} className="mx-8 text-sm">
+              <Link key={item.id} href={"/article/" + item.slug} className="mx-8 text-sm hover:underline">
                 {item.title}
-              </span>
+              </Link>
             ))}
           </div>
         </div>

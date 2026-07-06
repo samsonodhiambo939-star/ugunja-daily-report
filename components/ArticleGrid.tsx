@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Article } from "@/lib/data";
 
 export default function ArticleGrid({ articles }: { articles: Article[] }) {
@@ -9,9 +10,9 @@ export default function ArticleGrid({ articles }: { articles: Article[] }) {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((article) => (
-          <a
+          <Link
             key={article.id}
-            href="#"
+            href={"/article/" + article.slug}
             className="group bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow"
           >
             <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
@@ -41,7 +42,7 @@ export default function ArticleGrid({ articles }: { articles: Article[] }) {
                 {article.author} &middot; {article.date}
               </p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

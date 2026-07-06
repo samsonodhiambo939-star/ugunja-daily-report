@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Article } from "@/lib/data";
 
 export default function HeroSection({ hero }: { hero: Article | null }) {
@@ -5,8 +6,8 @@ export default function HeroSection({ hero }: { hero: Article | null }) {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-6">
-      <a
-        href="#"
+      <Link
+        href={"/article/" + hero.slug}
         className="group block relative overflow-hidden rounded-xl bg-gradient-to-br from-brand-blue to-brand-green"
       >
         <img
@@ -29,7 +30,7 @@ export default function HeroSection({ hero }: { hero: Article | null }) {
             {hero.author} &middot; {hero.date}
           </p>
         </div>
-      </a>
+      </Link>
     </section>
   );
 }
